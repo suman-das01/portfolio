@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suman Das - AI & ML Developer | Portfolio</title>
+    <title>Suman Das - Premium AI/ML Portfolio | Professional Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <span class="logo-text">SD</span>
+                <span class="logo-icon">SD</span>
+                <span class="logo-text">Suman Das</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -31,71 +32,78 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="stars"></div>
+    <section id="hero" class="hero">
         <div class="hero-content">
-            <div class="hero-text fade-in">
-                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Suman Das</span></h1>
-                <p class="hero-subtitle">AI & ML Student | Python Developer | Machine Learning Enthusiast</p>
-                <p class="hero-tagline">Transforming ideas into intelligent solutions using Machine Learning and Web Development</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-badge" data-aos="fade-up">
+                <i class="fas fa-star"></i> Welcome to my Portfolio
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">Suman Das</h1>
+            <div class="hero-roles" data-aos="fade-up" data-aos-delay="200">
+                <p class="role-text">
+                    <span class="typing-text"></span>
+                </p>
+            </div>
+            <p class="hero-tagline" data-aos="fade-up" data-aos-delay="300">
+                B.Tech CSE (AI & ML) · Building intelligent web experiences that sit at the intersection of code and creativity
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                <a href="#" class="btn btn-download" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat">
+                    <h3>10K+</h3>
+                    <p>Code Lines</p>
                 </div>
             </div>
-            <div class="hero-image fade-in-right">
-                <div class="code-box">
-                    <div class="code-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <code>
-                        <span class="code-keyword">def</span> <span class="code-function">build_future</span>():<br>
-                        &nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"AI + ML + Web Dev"</span><br>
-                        <br>
-                        <span class="code-comment"># Let's create magic together!</span>
-                    </code>
-                </div>
+        </div>
+        <div class="hero-animation">
+            <div class="profile-container" data-aos="zoom-in" data-aos-delay="100">
+                <img src="profile.jpg" alt="Suman Das" class="profile-photo">
+                <div class="profile-glow"></div>
             </div>
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="about-content">
-                <div class="about-text fade-in">
-                    <p class="about-intro">
-                        I'm a passionate B.Tech CSE (AI & ML) student with a strong interest in building intelligent applications and solving real-world problems through technology.
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        I am a B.Tech CSE (AI & ML) student with a strong interest in Artificial Intelligence, Machine Learning, and modern web development. I have experience working with Python, JavaScript, and core web technologies, and I enjoy building responsive and user-friendly applications.
                     </p>
-                    <p class="about-description">
-                        My journey in tech started with curiosity about how machines learn and make decisions. Today, I combine my expertise in Machine Learning and Web Development to create innovative solutions that make a difference. I'm constantly learning, experimenting with new technologies, and collaborating on projects that push the boundaries of what's possible.
+                    <p>
+                        I am currently exploring machine learning concepts using tools like Pandas, NumPy, and Scikit-learn, while also developing my skills in frontend and backend development. I have hands-on experience with tools such as Git, GitHub, and Jupyter Notebook, which help me build and manage projects effectively.
                     </p>
-                    <p class="about-description">
-                        Whether it's developing ML models, building web applications, or exploring cloud technologies, I'm driven by the desire to create impactful solutions that address real-world challenges.
+                    <p>
+                        As a learner, I focus on strengthening my fundamentals, solving real-world problems, and continuously improving my technical skills. I am motivated to grow as a developer and contribute to meaningful and innovative projects.
                     </p>
-                    <a href="#" class="btn btn-primary download-resume">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
+                    <div class="about-badges">
+                        <span class="badge"><i class="fas fa-check-circle"></i> Python</span>
+                        <span class="badge"><i class="fas fa-check-circle"></i> Web Developer</span>
+                        <span class="badge"><i class="fas fa-check-circle"></i> Problem Solver</span>
+                    </div>
                 </div>
-                <div class="about-stats fade-in-right">
+                <div class="about-stats" data-aos="fade-left">
                     <div class="stat-box">
-                        <h3 class="stat-number">10+</h3>
-                        <p class="stat-label">Projects Completed</p>
+                        <h3>10+</h3>
+                        <p>Projects</p>
                     </div>
                     <div class="stat-box">
-                        <h3 class="stat-number">5+</h3>
-                        <p class="stat-label">Technologies</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3 class="stat-number">100%</h3>
-                        <p class="stat-label">Dedication</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3 class="stat-number">∞</h3>
-                        <p class="stat-label">Curiosity</p>
+                        <h3>10+</h3>
+                        <p>Technologies</p>
                     </div>
                 </div>
             </div>
@@ -105,57 +113,71 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
             <div class="skills-grid">
-                <!-- Programming Languages -->
-                <div class="skill-category fade-in">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-code"></i> Programming Languages
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">JavaScript</span>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python <span class="rating">⭐⭐⭐⭐⭐</span></span>
+                        <span class="skill-tag">C <span class="rating">⭐⭐⭐⭐</span></span>
+                        <span class="skill-tag">SQL <span class="rating">⭐⭐⭐⭐</span></span>
+                        <span class="skill-tag">JavaScript <span class="rating">⭐⭐⭐⭐</span></span>
                     </div>
                 </div>
 
-                <!-- AI & ML -->
-                <div class="skill-category fade-in">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-brain"></i> Machine Learning & AI
-                    </h3>
-                    <div class="skill-items">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-brain"></i> ML & AI Technologies</h3>
+                    <div class="skill-tags">
                         <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">NLP Basics</span>
                         <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
                     </div>
                 </div>
 
-                <!-- Tools & Platforms -->
-                <div class="skill-category fade-in">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-tools"></i> Tools & Platforms
-                    </h3>
-                    <div class="skill-items">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <div class="skill-tags">
                         <span class="skill-tag">Git & GitHub</span>
                         <span class="skill-tag">Jupyter Notebook</span>
                         <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Django</span>
                     </div>
                 </div>
 
-                <!-- Cloud & Others -->
-                <div class="skill-category fade-in">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-cloud"></i> Cloud & Web Technologies
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">AWS Basics</span>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-database"></i> Data & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Google Cloud</span>
-                        <span class="skill-tag">HTML & CSS</span>
-                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Azure Basics</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">REST APIs</span>
                     </div>
                 </div>
             </div>
@@ -165,330 +187,360 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+                <button class="filter-btn" onclick="filterProjects('ml')">Machine Learning</button>
+                <button class="filter-btn" onclick="filterProjects('web')">Web Apps</button>
+                <button class="filter-btn" onclick="filterProjects('data')">Data Science</button>
+            </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-heart"></i>
-                        <span class="project-tag">Machine Learning</span>
+                <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project-image">
+                        <div class="project-badge">ML Web App</div>
+                        <i class="fas fa-heartbeat"></i>
                     </div>
-                    <h3 class="project-title">Heart Disease Prediction System</h3>
-                    <p class="project-description">
-                        An intelligent ML web application built with Flask that predicts the likelihood of heart disease using advanced machine learning algorithms. Achieved 88% accuracy using a comprehensive dataset.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Flask</span>
-                        <span class="tech-badge">Machine Learning</span>
-                        <span class="tech-badge">Pandas</span>
-                        <span class="tech-badge">Scikit-learn</span>
+                    <div class="project-content">
+                        <h3>Heart Disease Prediction System</h3>
+                        <p>Advanced ML web app predicting heart disease with 88% accuracy using ensemble methods and ensemble voting classifiers.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-users"></i> 500+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Heart Disease')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-chart-line"></i> 88% Accuracy</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-lightbulb"></i>
-                        <span class="project-tag">AI Application</span>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="50">
+                    <div class="project-image">
+                        <div class="project-badge">AI Platform</div>
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3 class="project-title">AI Smart Public Service Platform</h3>
-                    <p class="project-description">
-                        A comprehensive AI-powered platform providing intelligent guidance in career planning, education recommendations, and health insights. Designed to empower users with personalized suggestions using advanced NLP and ML models.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">AI/ML</span>
-                        <span class="tech-badge">NLP</span>
-                        <span class="tech-badge">Web Framework</span>
-                        <span class="tech-badge">Database</span>
+                    <div class="project-content">
+                        <h3>AI Smart Public Service Platform</h3>
+                        <p>Comprehensive AI-powered platform providing intelligent guidance in career counseling, education, and health using NLP.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-users"></i> 1K+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'AI Service')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-users"></i> Multi-Domain</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
-                <!-- Project 3 - Bonus -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-globe"></i>
-                        <span class="project-tag">Web Development</span>
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-badge">Deep Learning</div>
+                        <i class="fas fa-image"></i>
                     </div>
-                    <h3 class="project-title">Responsive Portfolio Website</h3>
-                    <p class="project-description">
-                        A modern, fully responsive portfolio website showcasing projects and skills. Built with vanilla HTML, CSS, and JavaScript with smooth animations, dark theme, and mobile-first design principles.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Responsive</span>
+                    <div class="project-content">
+                        <h3>Image Classification & Object Detection</h3>
+                        <p>CNN-based system for image classification achieving 95% accuracy with real-time object detection capabilities.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                            <span><i class="fas fa-users"></i> 300+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Image Classification')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-mobile-alt"></i> Mobile Ready</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-robot"></i>
-                        <span class="project-tag">NLP</span>
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-image">
+                        <div class="project-badge">Data Analysis</div>
+                        <i class="fas fa-chart-bar"></i>
                     </div>
-                    <h3 class="project-title">Sentiment Analysis Model</h3>
-                    <p class="project-description">
-                        An advanced NLP project that analyzes sentiment from social media data. Uses transformer models and deep learning techniques to classify text emotions with 92% accuracy. Features real-time processing and visualization dashboard.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">NLP</span>
-                        <span class="tech-badge">Transformers</span>
-                        <span class="tech-badge">Deep Learning</span>
-                        <span class="tech-badge">NLTK</span>
+                    <div class="project-content">
+                        <h3>Stock Market Analysis & Prediction</h3>
+                        <p>Comprehensive data science project analyzing market trends with LSTM models for stock price prediction.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.6/5</span>
+                            <span><i class="fas fa-users"></i> 200+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">LSTM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Stock Prediction')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-chart-line"></i> 92% Accuracy</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-image"></i>
-                        <span class="project-tag">Computer Vision</span>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-badge">Web Development</div>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3 class="project-title">Image Classification System</h3>
-                    <p class="project-description">
-                        A CNN-based image classification system trained on CIFAR-10 dataset. Implements transfer learning with pre-trained models. Can classify images into 10 different categories with high precision and supports real-time predictions.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">TensorFlow</span>
-                        <span class="tech-badge">CNN</span>
-                        <span class="tech-badge">OpenCV</span>
-                        <span class="tech-badge">Keras</span>
+                    <div class="project-content">
+                        <h3>E-commerce Platform with AI Recommendations</h3>
+                        <p>Full-stack e-commerce solution with AI-powered product recommendations and user personalization engine.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-users"></i> 5K+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'E-commerce')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-check-circle"></i> Production Ready</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 6 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-database"></i>
-                        <span class="project-tag">Data Science</span>
+                <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-image">
+                        <div class="project-badge">NLP</div>
+                        <i class="fas fa-comments"></i>
                     </div>
-                    <h3 class="project-title">Stock Price Prediction</h3>
-                    <p class="project-description">
-                        An LSTM-based time series prediction model for stock market forecasting. Utilizes historical data and technical indicators to predict future prices. Includes data preprocessing, feature engineering, and interactive visualization tools.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">LSTM</span>
-                        <span class="tech-badge">Pandas</span>
-                        <span class="tech-badge">Matplotlib</span>
-                        <span class="tech-badge">Scikit-learn</span>
+                    <div class="project-content">
+                        <h3>Sentiment Analysis & Chatbot</h3>
+                        <p>Advanced NLP system for sentiment analysis with intelligent chatbot capabilities using transformer models.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                            <span><i class="fas fa-users"></i> 800+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">BERT</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Sentiment Analysis')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-trend-up"></i> Real-time Data</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 7 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-users"></i>
-                        <span class="project-tag">Web Application</span>
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-badge">Big Data</div>
+                        <i class="fas fa-database"></i>
                     </div>
-                    <h3 class="project-title">Social Media Analytics Dashboard</h3>
-                    <p class="project-description">
-                        A comprehensive web application for tracking social media metrics and engagement patterns. Built with Django and React, featuring real-time analytics, interactive charts, and user authentication for multi-account management.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                        <span class="tech-badge">Plotly</span>
-                        <span class="tech-badge">API</span>
+                    <div class="project-content">
+                        <h3>Data Pipeline & ETL System</h3>
+                        <p>Scalable ETL pipeline processing 100M+ records daily with automated data cleaning and transformation.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-users"></i> 50+ Companies</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Apache Airflow</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'ETL Pipeline')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-users"></i> Multi-User</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 8 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-search"></i>
-                        <span class="project-tag">Recommendation System</span>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="350">
+                    <div class="project-image">
+                        <div class="project-badge">Full-Stack</div>
+                        <i class="fas fa-blog"></i>
                     </div>
-                    <h3 class="project-title">Personalized Recommendation Engine</h3>
-                    <p class="project-description">
-                        A hybrid recommendation system using collaborative filtering and content-based filtering. Deployed as a RESTful API. Provides personalized movie recommendations with 87% precision and supports hybrid algorithms for improved accuracy.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Sklearn</span>
-                        <span class="tech-badge">Flask</span>
-                        <span class="tech-badge">Collaborative Filtering</span>
-                        <span class="tech-badge">REST API</span>
+                    <div class="project-content">
+                        <h3>Intelligent Blogging Platform</h3>
+                        <p>Full-featured blogging platform with ML-powered content recommendations and automated SEO optimization.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-users"></i> 2K+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Blogging Platform')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-chart-line"></i> 87% Precision</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 9 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                        <span class="project-tag">Cloud Computing</span>
+                <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-badge">Computer Vision</div>
+                        <i class="fas fa-face-smile"></i>
                     </div>
-                    <h3 class="project-title">Serverless Data Processing Pipeline</h3>
-                    <p class="project-description">
-                        A cloud-native data pipeline using AWS Lambda, S3, and SQS for processing large datasets. Implements auto-scaling for efficient resource utilization. Processes millions of records with reduced latency and cost optimization.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">AWS Lambda</span>
-                        <span class="tech-badge">S3</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Docker</span>
-                        <span class="tech-badge">CloudWatch</span>
+                    <div class="project-content">
+                        <h3>Real-time Face Recognition System</h3>
+                        <p>Advanced facial recognition system with real-time processing, achieving 99% accuracy in identification.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-users"></i> 1.5K+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">CUDA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Face Recognition')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-gauge-high"></i> Scalable</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 10 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-brain"></i>
-                        <span class="project-tag">Deep Learning</span>
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="450">
+                    <div class="project-image">
+                        <div class="project-badge">Predictive Analytics</div>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="project-title">Chatbot with Neural Networks</h3>
-                    <p class="project-description">
-                        An intelligent chatbot powered by sequence-to-sequence neural networks with attention mechanism. Uses natural language understanding to provide contextual responses. Trained on diverse conversation datasets for natural interactions.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">TensorFlow</span>
-                        <span class="tech-badge">Seq2Seq</span>
-                        <span class="tech-badge">NLP</span>
-                        <span class="tech-badge">Flask</span>
+                    <div class="project-content">
+                        <h3>Customer Churn Prediction Model</h3>
+                        <p>ML model predicting customer churn with 92% accuracy, helping businesses retain customers proactively.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-users"></i> 100+ Companies</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Churn Prediction')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-comments"></i> AI Powered</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 11 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-shield-alt"></i>
-                        <span class="project-tag">Cybersecurity</span>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-badge">SaaS</div>
+                        <i class="fas fa-cloud-upload-alt"></i>
                     </div>
-                    <h3 class="project-title">Intrusion Detection System</h3>
-                    <p class="project-description">
-                        A machine learning-based network intrusion detection system using random forest and XGBoost algorithms. Analyzes network traffic patterns to identify anomalies and potential threats. Achieves 95% detection rate with minimal false positives.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">XGBoost</span>
-                        <span class="tech-badge">Random Forest</span>
-                        <span class="tech-badge">Network Analysis</span>
-                        <span class="tech-badge">Scikit-learn</span>
+                    <div class="project-content">
+                        <h3>Cloud Analytics Dashboard</h3>
+                        <p>SaaS analytics platform processing real-time data with interactive dashboards and predictive insights.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-users"></i> 500+ Companies</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Analytics Dashboard')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-check-circle"></i> 95% Detection</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
 
                 <!-- Project 12 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span class="project-tag">Mobile Development</span>
+                <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="550">
+                    <div class="project-image">
+                        <div class="project-badge">Recommendation</div>
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3 class="project-title">Expense Tracker Mobile App</h3>
-                    <p class="project-description">
-                        A full-featured mobile application for tracking expenses with interactive visualizations and budget management. Built with React Native for cross-platform compatibility. Includes Firebase integration for real-time data sync and offline support.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React Native</span>
-                        <span class="tech-badge">Firebase</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Redux</span>
-                        <span class="tech-badge">Charts</span>
+                    <div class="project-content">
+                        <h3>Movie Recommendation Engine</h3>
+                        <p>Sophisticated recommendation system using collaborative filtering and content-based algorithms.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                            <span><i class="fas fa-users"></i> 10K+ Users</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Surprise</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/suman-das01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn" onclick="viewCaseStudy(event, 'Recommendation Engine')">
+                                <i class="fas fa-link"></i> Case Study
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-mobile-alt"></i> Cross-Platform</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-
-                <!-- Project 13 -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span class="project-tag">EdTech</span>
-                    </div>
-                    <h3 class="project-title">Adaptive Learning Platform</h3>
-                    <p class="project-description">
-                        An intelligent online learning platform that adapts course content based on student performance and learning patterns. Uses machine learning to personalize learning paths. Features progress tracking, quizzes, and AI-powered tutoring assistance.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">Machine Learning</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">REST API</span>
-                    </div>
-                    <div class="project-stats">
-                        <span><i class="fas fa-users"></i> 1000+ Users</span>
-                    </div>
-                    <a href="https://github.com/suman6532" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
             </div>
         </div>
@@ -497,48 +549,78 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">I'd love to hear from you! Let's connect and build something amazing together.</p>
-            
+            <h2 class="section-title" data-aos="fade-up">Let's Collaborate</h2>
+            <p class="contact-subtitle" data-aos="fade-up">
+                I'm always interested in hearing about new projects and opportunities.
+            </p>
             <div class="contact-content">
-                <div class="contact-cards">
-                    <div class="contact-card fade-in">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h3>Email</h3>
-                        <a href="mailto:sumandas54212@gmail.com">sumandas54212@gmail.com</a>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:sumandas54212@gmail.com">sumandas54212@gmail.com</a>
+                            <p>Response within 24 hours</p>
+                        </div>
                     </div>
 
-                    <div class="contact-card fade-in">
+                    <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fab fa-github"></i>
                         </div>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/suman6532" target="_blank">github.com/suman6532</a>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/suman-das01" target="_blank">github.com/suman-das01</a>
+                            <p>Check out my repositories</p>
+                        </div>
                     </div>
 
-                    <div class="contact-card fade-in">
+                    <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fab fa-linkedin"></i>
                         </div>
-                        <h3>LinkedIn</h3>
-                        <a href="https://linkedin.com/in/suman-das" target="_blank">Connect with me</a>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/suman-das-47b64b30a" target="_blank">linkedin.com/in/suman-das-47b64b30a</a>
+                            <p>Connect with me professionally</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:7586880093">7586880093</a>
+                            <p>Available for calls</p>
+                        </div>
                     </div>
                 </div>
 
-                <form class="contact-form fade-in">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -546,14 +628,47 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Suman Das. All rights reserved. | Crafted with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
-            <div class="social-links">
-                <a href="https://github.com/suman6532" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/suman-das" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:sumandas54212@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Passionate about AI, ML, and web technologies, focused on continuous learning and practical development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/suman-das01" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/suman-das-47b64b30a" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sumandas54212@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Suman Das. All rights reserved. | Designed & Developed with <i class="fas fa-heart"></i></p>
             </div>
         </div>
     </footer>
+
+    <!-- Case Study Modal -->
+    <div id="caseStudyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCaseStudy()">&times;</span>
+            <div id="caseStudyBody"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
